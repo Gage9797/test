@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "author": "Gorge <guozhi.long@xintech.cn>",
+  "scripts": {
+    "dev": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi setup",
+    "setup": "umi setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@umijs/plugin-qiankun": "^2.44.1",
+    "@umijs/plugins": "^4.3.10",
+    "antd-mobile": "^5.37.1",
+    "classnames": "^2.5.1",
+    "umi": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.0.3"
+  }
+}

@@ -1,0 +1,184 @@
+.custom-toast-mask {
+  color: red;
+  :global {
+    .adm-toast-mask, .adm-toast-main {
+      background-color: red;
+      color: #000;
+      border-radius: 23px;
+      max-width: 100%;
+      margin: 0 12px;
+      padding: 16px;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  .use-now {
+    align-self: flex-end;
+  }
+}
+.position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-text {
+    flex: 1;
+    margin-right: 8px;
+  }
+  .open {
+    border-radius: 28px;
+    background: #DD0866;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 12px;
+  }
+}
+  
+.top-tab-fixed {
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+}
+
+.top-tab {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  background-color: red;
+  transition: all 1s ease 0s;
+}
+
+.progress-container {
+  width: 64px;
+  position: relative;
+  :global {
+    .adm-progress-bar-fill {
+      position: relative;
+    }
+    .adm-progress-bar-fill::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      background-image: url('@/assets/home/lightning.svg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.progress {
+  --track-color: #FFE6F1;
+  --fill-color: #DD0866;
+  --track-width: 10px;
+  width: 64px;
+}
+
+.text {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 10px;
+}
+
+.done-progress-container {
+  width: 64px;
+  position: relative;
+  :global {
+    .adm-progress-bar-fill {
+      position: relative;
+    }
+    .adm-progress-bar-fill::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 10px;
+      height: 10px;
+      background-image: url('@/assets/home/done.svg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      z-index: 999;
+    }
+  }
+}
+
+
+
+.price-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  background: rgba(221, 8, 102, 0.05);
+  padding-left: 8px;
+  .price-tag-icon {
+
+  }
+  .price-tag {
+    flex: 1;
+    color: #DD0866;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    z-index: 999;
+  }
+  .price-btn {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: relative;
+    background-color: #DD0866;
+    color: #FFF;
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 6px 12px 6px 1px;
+    line-height: 20px;
+  }
+  .price-btn::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -14.5px;
+    width: 15px;
+    height: 32px;
+    background-image: url('@/assets/home/vector1.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 99;
+  } 
+  .price-btn::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -19px;
+    width: 15px;
+    height: 32px;
+    background-image: url('@/assets/home/vector2.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  } 
+
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  opacity: 0.6;
+  z-index: 99;
+}
